@@ -12,6 +12,8 @@ import { AddTodoComponent } from './todo/add-todo/add-todo.component';
 import { EditTodoComponent } from './todo/edit-todo/edit-todo.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavComponent } from './navigation/sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     TodoComponent,
     AddTodoComponent,
-    EditTodoComponent
+    EditTodoComponent,
+    HeaderComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
