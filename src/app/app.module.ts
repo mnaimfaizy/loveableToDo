@@ -11,6 +11,7 @@ import { TodoComponent } from './todo/todo.component';
 import { AddTodoComponent } from './todo/add-todo/add-todo.component';
 import { EditTodoComponent } from './todo/edit-todo/edit-todo.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MaterialModule,
     AppRoutingModule,
     FlexLayoutModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
