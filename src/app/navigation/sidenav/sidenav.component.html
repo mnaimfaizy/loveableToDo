@@ -1,8 +1,8 @@
 <mat-nav-list>
-  <a mat-list-item routerLink="/login" (click)="onCloseSideNav()"> Login </a>
-  <a mat-list-item routerLink="/register" (click)="onCloseSideNav()"> Register </a>
-  <mat-list-item>
-    <button mat-icon-button (click)="onCloseSideNav()">
+  <a mat-list-item *ngIf="!isAuth" routerLink="/login" (click)="onCloseSideNav()"> Login </a>
+  <a mat-list-item *ngIf="!isAuth" routerLink="/register" (click)="onCloseSideNav()"> Register </a>
+  <mat-list-item *ngIf="isAuth" >
+    <button mat-icon-button (click)="onLogout()">
       <mat-icon>eject</mat-icon>
       Logout
     </button>
